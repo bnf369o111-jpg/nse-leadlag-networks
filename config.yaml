@@ -1,0 +1,7 @@
+universe_file: data/raw/nifty200.csv
+benchmark: "^NSEI"
+start: "2012-01-01"
+end: "2026-09-30"
+min_history_frac: 0.90          # stock must have returns on >=90% of days
+min_median_traded_value_cr: 5   # median daily traded value >= Rs 5 crore
+max_abs_log_return: 0.40        # flag (not delete) moves larger than ~49%
